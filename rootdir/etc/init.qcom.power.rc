@@ -38,7 +38,6 @@ on enable-low-power
 
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
-    write /sys/block/sda/queue/iostats 1
 
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
