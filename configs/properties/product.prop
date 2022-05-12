@@ -22,8 +22,10 @@ audio.sys.offload.pstimeout.secs=3
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true
 
-# IORap
+# Disable Skia Tracing
+debug.hwui.skia_atrace_enabled=false
 
+# IORap
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
