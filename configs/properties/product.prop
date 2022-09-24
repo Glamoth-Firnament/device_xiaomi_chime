@@ -18,8 +18,15 @@ audio.sys.routing.latency=0
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 
-# BG
+# based from pixels max cached apps limit
 persist.sys.fw.bg_apps_limit=60
+
+#BService
+persist.sys.fw.bservice_age=30000
+persist.sys.fw.bservice_limit=15
+persist.sys.fw.bservice_enable=true
+persist.sys.fw.use_trim_settings=true
+persist.sys.fw.trim_enable_memory=4294967296
 
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true
@@ -36,7 +43,10 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 # LMKD
 ro.lmk.filecache_min_kb=153600
 ro.lmk.stall_limit_critical=40
-ro.lmk.kill_timeout_ms=50
+ro.lmk.kill_timeout_ms=500
+ro.lmk.use_new_strategy=true
+ro.lmk.enhance_batch_kill=false
+ro.lmk.super_critical=701
 
 # perf
 persist.sys.perf.topAppRenderThreadBoost.enable=false
