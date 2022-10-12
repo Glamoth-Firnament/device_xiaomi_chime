@@ -1,5 +1,5 @@
 # App Compaction configuration
-persist.sys.appcompact.enable_app_compact=false
+persist.sys.appcompact.enable_app_compact=true
 persist.sys.appcompact.full_compact_type=2
 persist.sys.appcompact.some_compact_type=4
 persist.sys.appcompact.compact_throttle_somesome=5000
