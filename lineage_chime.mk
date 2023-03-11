@@ -26,6 +26,7 @@ TARGET_HAS_UDFPS := false
 TARGET_USE_PIXEL_FINGERPRINT := false
 TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 TARGET_CORE_GMS := true
+WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_chime
