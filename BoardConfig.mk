@@ -109,7 +109,6 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
 TARGET_KERNEL_CONFIG := vendor/juice-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
 KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton/bin/aarch64-linux-gnu-
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 NEED_KERNEL_MODULE_SYSTEM := true
