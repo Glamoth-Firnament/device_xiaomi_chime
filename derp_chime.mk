@@ -11,25 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chime device
 $(call inherit-product, device/xiaomi/chime/device.mk)
 
-# Inherit some common lineage Flags.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common derp Flags.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-# Rice
-USE_LEGACY_BOOTANIMATION := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-RICE_MAINTAINER := scaledzdn
-RICE_CHIPSET := SD662
-SUSHI_BOOTANIMATION := 720
-RICE_OFFICIAL := false
-TARGET_ENABLE_BLUR := false
-TARGET_HAS_UDFPS := false
-TARGET_USE_PIXEL_FINGERPRINT := false
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
-TARGET_CORE_GMS := true
-WITH_GMS := true
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_chime
+PRODUCT_NAME := derp_chime
 PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115
