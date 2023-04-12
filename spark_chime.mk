@@ -11,13 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chime device
 $(call inherit-product, device/xiaomi/chime/device.mk)
 
-# Inherit some common derp Flags.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common spark Flags.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 WITH_GMS := false
+WITH_GAPPS := false
+
+# SparkOS  Things
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.spark.maintainer=scaledzdn.
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_chime
+PRODUCT_NAME := spark_chime
 PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115

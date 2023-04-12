@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_chime.mk
+    $(LOCAL_DIR)/spark_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_chime-user \
-    derp_chime-userdebug \
-    derp_chime-eng
+    spark_chime-user \
+    spark_chime-userdebug \
+    spark_chime-eng
