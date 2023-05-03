@@ -435,6 +435,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     libqti-perfd-client
 
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
