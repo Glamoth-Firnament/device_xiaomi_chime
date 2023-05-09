@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_chime.mk
+    $(LOCAL_DIR)/yaap_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_chime-user \
-    spark_chime-userdebug \
-    spark_chime-eng
+    yaap_chime-user \
+    yaap_chime-userdebug \
+    yaap_chime-eng
