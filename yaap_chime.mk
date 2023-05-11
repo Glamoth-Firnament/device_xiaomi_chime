@@ -16,6 +16,7 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 WITH_GMS := false
 WITH_GAPPS := false
+TARGET_BUILD_GAPPS := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := yaap_chime
