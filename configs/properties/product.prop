@@ -46,3 +46,6 @@ persist.sys.fw.bservice_enable?=true
 
 # Service reschedule
 persist.sys.am.reschedule_service=true
+
+# Maintainer Props
+ro.yaap.maintainer=scaledzdn.
