@@ -17,6 +17,7 @@ type persist_subsys_file, vendor_persist_type, file_type;
 
 # Power
 type proc_sched_energy_aware, proc_type, fs_type;
+type pps_socket, file_type;
 
 # ProcFS
 type proc_last_kmsg, fs_type, proc_type;
