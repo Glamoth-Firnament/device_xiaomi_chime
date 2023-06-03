@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="maintainer_name">scaledzdn. (@zaidannn7)</string>
-    <string name="maintainer_telegram">https://t.me/zaidannn7</string>
+    <string name="build_maintainer_summary">scaledzdn. (@zaidannn7)</string>
+    <string name="build_maintainer_telegram">https://t.me/zaidannn7</string>
 
 </resources>
