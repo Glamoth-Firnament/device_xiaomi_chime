@@ -42,9 +42,12 @@ LOCAL_OVERRIDES_PACKAGES := \
     SprintDM \
     SprintHM \
     Tycho \
+    TagGoogle \
     USCCDM \
+    WellbeingPrebuilt \
     Videos \
     VZWAPNLib \
+    Velvet \
     VzwOmaTrigger \
     YouTube \
     YouTubeMusicPrebuilt
