@@ -53,3 +53,6 @@ persist.sys.perf.topAppRenderThreadBoost.enable=false
 
 # Service reschedule
 persist.sys.am.reschedule_service=true
+
+# SystemUI filter
+dalvik.vm.systemuicompilerfilter=speed
