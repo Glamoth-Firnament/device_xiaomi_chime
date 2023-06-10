@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 Xtended Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_chime.mk
+    $(LOCAL_DIR)/xtended_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_chime-user \
-    evolution_chime-userdebug \
-    evolution_chime-eng
+    xtended_chime-user \
+    xtended_chime-userdebug \
+    xtended_chime-eng
