@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/chime/device.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 TARGET_USES_PICO_GAPPS := true
+TARGET_USES_PICO_GAPPS ?= true
 TARGET_ENABLE_BLUR := false
 
 # Device identifier. This must come after all inclusions.
