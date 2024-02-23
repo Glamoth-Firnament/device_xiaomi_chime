@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_chime.mk
+    $(LOCAL_DIR)/afterlife_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_chime-user \
-    derp_chime-userdebug \
-    derp_chime-eng
+    afterlife_chime-user \
+    afterlife_chime-userdebug \
+    afterlife_chime-eng
