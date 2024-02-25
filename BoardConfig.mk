@@ -108,12 +108,15 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
-TARGET_KERNEL_CONFIG := vendor/bengal-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/chime_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
+NEED_KERNEL_MODULE_SYSTEM := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"  AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LLVM=1 LLVM_IAS=1
 
 # Media
 TARGET_USES_ION := true
