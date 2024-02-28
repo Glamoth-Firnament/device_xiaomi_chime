@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_chime.mk
+    $(LOCAL_DIR)/blaze_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_chime-user \
-    derp_chime-userdebug \
-    derp_chime-eng
+    blaze_chime-user \
+    blaze_chime-userdebug \
+    blaze_chime-eng
