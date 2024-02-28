@@ -187,15 +187,6 @@ ART_BUILD_HOST_DEBUG := false
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-# Always preopt extracted APKs to prevent extracting out of the APK for gms
-# modules.
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
-
-# Use a profile based boot image for this device. Note that this is currently a
-# generic profile and not Android Go optimized.
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := art/build/boot/boot-image-profile.txt
-
 # Do not spin up a separate process for the network stack on go devices, use an in-process APK.
 PRODUCT_PACKAGES += com.android.tethering.inprocess
 
