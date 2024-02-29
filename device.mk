@@ -23,10 +23,8 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-    hardware/google/interfaces \
-    hardware/google/pixel \
-    vendor/qcom/opensource/usb/etc
+    hardware/xiaomi
+
 
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -445,11 +443,14 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3.vendor 
+    android.hardware.power@1.3.vendor \
+    android.hardware.power@1.3 \
+    android.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -487,7 +488,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
-    init.qcom.power.rc \
     init.qcom.rc \
     init.qti.ufs.rc \
     init.recovery.qcom.rc \

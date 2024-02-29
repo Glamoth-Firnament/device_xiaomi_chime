@@ -5,6 +5,7 @@ libsdsprpc.so
 libfastcvopt.so
 liblistensoundmodel2.so
 libOpenCL.so
+
 libmialgoengine.so 64
 libmpbase.so 64
 libHalSuperSensorServer.so 64
