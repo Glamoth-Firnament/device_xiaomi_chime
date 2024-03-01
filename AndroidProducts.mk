@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_chime.mk
+    $(LOCAL_DIR)/aicp_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_chime-user \
-    afterlife_chime-userdebug \
-    afterlife_chime-eng
+    aicp_chime-user \
+    aicp_chime-userdebug \
+    aicp_chime-eng
