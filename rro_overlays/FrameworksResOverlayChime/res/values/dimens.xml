@@ -22,12 +22,18 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Radius of the software rounded corners at the buttom of the display in its
+         natural orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
 
+    <!-- Radius of the software rounded corners at the top of the display in its
+         natural orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_top">94.0px</dimen>
 
-    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height">32.0dip</dimen>
 
-    <dimen name="status_bar_height_portrait">30dp</dimen>
+    <!-- Height of the status bar in landscape -->
+    <dimen name="status_bar_height_landscape">28dp</dimen>
 
 </resources>
