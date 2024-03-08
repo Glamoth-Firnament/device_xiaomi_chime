@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_chime.mk
+    $(LOCAL_DIR)/miku_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_chime-user \
-    aicp_chime-userdebug \
-    aicp_chime-eng
+    miku_chime-user \
+    miku_chime-userdebug \
+    miku_chime-eng
