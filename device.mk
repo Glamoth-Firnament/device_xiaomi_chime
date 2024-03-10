@@ -582,6 +582,7 @@ SPAMMY_LOG_TAGS := \
     libsensor-parseRGB \
     libsensor-ssccalapi \
     sensors \
+    vendor.qti.vibrator.chime \
     vendor.qti.hardware.display.composer-service \
     vendor.xiaomi.sensor.citsensorservice@2.0-service
 
