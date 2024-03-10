@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/miku_chime.mk
+    $(LOCAL_DIR)/spark_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    miku_chime-user \
-    miku_chime-userdebug \
-    miku_chime-eng
+    spark_chime-user \
+    spark_chime-userdebug \
+    spark_chime-eng

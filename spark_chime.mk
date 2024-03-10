@@ -11,13 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chime device
 $(call inherit-product, device/xiaomi/chime/device.mk)
 
-# Inherit some common Miku Flags.
-$(call inherit-product, vendor/miku/build/product/miku_product.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-MIKU_MASTER := scaledzdn.
+WITH_GAPPS := false
+WITH_GMS := false
+
+# SparkOS  Things
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.spark.maintainer=scaledzdn.
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := miku_chime
+PRODUCT_NAME := spark_chime
 PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115
