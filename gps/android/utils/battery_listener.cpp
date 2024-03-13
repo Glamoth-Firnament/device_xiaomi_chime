@@ -180,7 +180,7 @@ BatteryListenerImpl::BatteryListenerImpl(cb_fn_t cb) :
     init();
 }
 
-BatteryListenerImpl::~BatteryListenerImpl()
+BatteryListenerImpl::~BatteryListenerImpl() {
 {
     {
         std::lock_guard<std::mutex> _l(mLock);
@@ -191,6 +191,7 @@ BatteryListenerImpl::~BatteryListenerImpl()
                 LOC_LOGe("Transaction error in unregister to HealthHAL death: %s",
                         r.description().c_str());
             }
+        }
     }
     mDone = true;
     mThread->join();
