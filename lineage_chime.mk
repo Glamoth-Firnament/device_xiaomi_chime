@@ -18,7 +18,7 @@ WITH_GMS := false
 WITH_GAPPS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := baikal_chime
+PRODUCT_NAME := lineage_chime
 PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115

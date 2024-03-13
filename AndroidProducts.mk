@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2022 The baikalOS Project
+# Copyright (C) 2022 The lineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/baikal_chime.mk
+    $(LOCAL_DIR)/lineage_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    baikal_chime-user \
-    baikal_chime-userdebug \
-    baikal_chime-eng
+    lineage_chime-user \
+    lineage_chime-userdebug \
+    lineage_chime-eng
