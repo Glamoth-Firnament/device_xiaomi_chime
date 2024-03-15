@@ -31,7 +31,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     pm.dexopt.boot=verify \
-    pm.dexopt.first-boot=quicken \
+    pm.dexopt.first-boot=verify \
     pm.dexopt.install=speed-profile \
     pm.dexopt.bg-dexopt=everything \
     dalvik.vm.boot-dex2oat-cpu-set=1,2,3,4,5,6,7 \
