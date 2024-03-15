@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_chime.mk
+    $(LOCAL_DIR)/lineage_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_chime-user \
-    aicp_chime-userdebug \
-    aicp_chime-eng
+    lineage_chime-user \
+    lineage_chime-userdebug \
+    lineage_chime-eng
