@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_chime.mk
+    $(LOCAL_DIR)/carbon_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_chime-user \
-    afterlife_chime-userdebug \
-    afterlife_chime-eng
+    carbon_chime-user \
+    carbon_chime-userdebug \
+    carbon_chime-eng
