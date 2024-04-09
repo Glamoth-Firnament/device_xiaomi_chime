@@ -323,11 +323,6 @@ PRODUCT_PACKAGES += \
     libstagefright_omx.vendor
 
 # Overlays
-ifneq ($(WITH_GAPPS),true)
-PRODUCT_PACKAGES += \
-    $(LOCAL_PATH)/overlay-bootleg
-endif
-
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     FrameworksCustomChime \
